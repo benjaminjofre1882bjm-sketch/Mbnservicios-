@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.B.N Servicios | Construcción y Mantenimiento en San Juan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a1a1a',
+                        accent: '#f59e0b',
+                        blueSec: '#0ea5e9',
+                        redSec: '#ef4444',
+                        lightBg: '#f8fafc',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+            }
+            .section-padding {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-lightBg text-gray-800 font-sans">
+    <!-- Barra de navegación -->
+    <nav class="bg-primary text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center gap-3 mb-3 md:mb-0">
+                <!-- TU LOGO CORREGIDO Y ACTIVO -->
+                <img src="https://i.imgur.com/9Z7X8yY.png" alt="Logo M.B.N Servicios - Construcción y Mantenimiento" class="h-16 w-auto rounded-full">
+                <span class="text-xl font-bold">M.B.N SERVICIOS</span>
+            </div>
+            <div class="flex gap-6 font-medium">
+                <a href="#inicio" class="hover:text-accent transition-colors">Inicio</a>
+                <a href="#servicios" class="hover:text-accent transition-colors">Servicios</a>
+                <a href="#nosotros" class="hover:text-accent transition-colors">Nosotros</a>
+                <a href="#galeria" class="hover:text-accent transition-colors">Galería</a>
+                <a href="#contacto" class="hover:text-accent transition-colors">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección principal / Portada -->
+    <section id="inicio" class="bg-gradient-to-br from-gray-800 to-gray-900 text-white section-padding relative overflow-hidden">
+        <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center gap-10">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-[clamp(2.2rem,5vw,4rem)] font-extrabold leading-tight text-shadow">
+                    M.B.N SERVICIOS<br>
+                    <span class="text-accent">Construcción y Mantenimiento en General</span>
+                </h1>
+                <p class="mt-6 text-lg text-gray-200 max-w-xl mx-auto md:mx-0">
+                    Soluciones completas para tu hogar, comercio o campo en San Juan Capital, Pocito y toda la zona. Calidad, puntualidad y trabajo seguro en cada proyecto.
+                </p>
+                <div class="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
+                    <a href="#contacto" class="bg-accent hover:bg-amber-600 text-white font-semibold py-3 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg">
+                        Solicitar Presupuesto
+                    </a>
+                    <a href="#servicios" class="bg-transparent border-2 border-white hover:bg-white hover:text-primary font-semibold py-3 px-8 rounded-lg transition-all">
+                        Ver Servicios
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://i.imgur.com/9Z7X8yY.png" alt="Logo 3D M.B.N Servicios oficial" class="max-w-xs md:max-w-md drop-shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="bg-white section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-14">
+                <h2 class="text-[clamp(1.8rem,3vw,2.8rem)] font-bold text-primary">Nuestros Servicios</h2>
+                <p class="text-gray-600 mt-3 max-w-2xl mx-auto">Cubrimos todas las necesidades de tu propiedad, desde obra nueva hasta reparaciones urgentes y mantenimiento periódico.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tarjeta 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow border-l-4 border-blueSec">
+                    <i class="fa fa-home text-4xl text-blueSec mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Construcción y Reformas</h3>
+                    <p class="text-gray-700">Obras completas, ampliaciones, remodelaciones de baños, cocinas, techos y estructuras. Trabajos de albañilería en general.</p>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow border-l-4 border-redSec">
+                    <i class="fa fa-bolt text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Instalaciones Eléctricas</h3>
+                    <p class="text-gray-700">Instalación, reparación y mantenimiento de redes eléctricas, tableros, iluminación, puesta a tierra y adecuación a normas vigentes.</p>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow border-l-4 border-blue-500">
+                    <i class="fa fa-tint text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Sanitarios y Plomería</h3>
+                    <p class="text-gray-700">Reparación de fugas, cambio de cañerías, instalación de artefactos, bombas de agua, tanques y sistemas de desagüe.</p>
+                </div>
+                <!-- Tarjeta 4 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow border-l-4 border-green-600">
+                    <i class="fa fa-wrench text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Mantenimiento Integral</h3>
+                    <p class="text-gray-700">Pintura, revestimientos, cerrajería, soldadura, trabajos en altura y mantenimiento preventivo para hogares y edificios.</p>
+                </div>
+                <!-- Tarjeta 5 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow border-l-4 border-teal-500">
+                    <i class="fa fa-snowflake-o text-4xl text-teal-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Climatización</h3>
+                    <p class="text-gray-700">Instalación, limpieza y reparación de equipos de aire acondicionado, calefacción y ventilación.</p>
+                </div>
+                <!-- Tarjeta 6 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow border-l-4 border-lime-600">
+                    <i class="fa fa-leaf text-4xl text-lime-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Mantenimiento Agrícola y Exteriores</h3>
+                    <p class="text-gray-700">Cuidado de áreas verdes, mantenimiento de instalaciones rurales, maquinaria liviana y cercos perimetrales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="bg-gray-100 section-padding">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-[clamp(1.8rem,3vw,2.8rem)] font-bold text-primary mb-6">Sobre M.B.N Servicios</h2>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Somos una empresa con base en <strong>Pocito - San Juan</strong>, dedicada a brindar soluciones confiables de construcción y mantenimiento. Nos caracterizamos por la honestidad en los presupuestos, el uso de materiales de calidad y un equipo calificado que cuida cada detalle. Trabajamos tanto con clientes particulares como comercios e instituciones, cubriendo San Juan Capital y toda la zona del departamento de Pocito y alrededores.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="bg-white section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.8rem,3vw,2.8rem)] font-bold text-primary">Nuestros Trabajos</h2>
+                <p class="text-gray-600 mt-3">Ejemplos de obras y servicios realizados con dedicación</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="h-48 bg-gray-200 rounded-lg overflow-hidden hover:scale-105 transition-transform shadow-sm flex items-center justify-center text-gray-500">Espacio para foto de obra</div>
+                <div class="h-48 bg-gray-200 rounded-lg overflow-hidden hover:scale-105 transition-transform shadow-sm flex items-center justify-center text-gray-500">Espacio para foto de obra</div>
+                <div class="h-48 bg-gray-200 rounded-lg overflow-hidden hover:scale-105 transition-transform shadow-sm flex items-center justify-center text-gray-500">Espacio para foto de obra</div>
+                <div class="h-48 bg-gray-200 rounded-lg overflow-hidden hover:scale-105 transition-transform shadow-sm flex items-center justify-center text-gray-500">Espacio para foto de obra</div>
+            </div>
+            <p class="text-center mt-8 text-gray-600">* Solo reemplaza estos espacios con las fotos reales de tus trabajos cuando las tengas</p>
+        </div>
+    </section>
+
+    <!-- Contacto: TUS DATOS YA PUESTOS -->
+    <section id="contacto" class="bg-gray-900 text-white section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.8rem,3vw,2.8rem)] font-bold">Contactanos</h2>
+                <p class="text-gray-300 mt-3">Presupuestos sin cargo — atendemos en Calle 7 y Chacabuco, pasando Canal Céspedes, Pocito y todo San Juan</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <!-- Datos de contacto COMPLETOS -->
+                <div class="space-y-5">
+                    <h3 class="text-xl font-semibold text-accent">Datos de contacto</h3>
+                    <div class="flex items-center gap-3">
+                        <i class="fa fa-map-marker-alt text-accent text-xl"></i>
+                        <span>Calle 7 y Chacabuco, pasando Canal Céspedes • Pocito, San Juan</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa fa-phone text-accent text-xl"></i>
+                        <span>Teléfono / WhatsApp: +54 264 4891520</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa fa-envelope text-accent text-xl"></i>
+                        <span>benjaminjofre1882.bjm@gmail.com</span>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-700">
+                        <p class="text-gray-300">Horario de atención:<br>Lunes a Sábados: 7:00 hs a 19:00 hs</p>
+                    </div>
+                </div>
+
+                <!-- Formulario -->
+                <form class="space-y-4 bg-gray-800 p-6 rounded-xl shadow-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm mb-1">Nombre y Apellido</label>
+                            <input type="text" class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:border-accent text-white">
+                        </div>
+                        <div>
+                            <label class="block text-sm mb-1">Teléfono / WhatsApp</label>
+                            <input type="tel" class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:border-accent text-white">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm mb-1">Tipo de servicio que necesitas</label>
+                        <select class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:border-accent text-white">
+                            <option>Construcción / Obra nueva</option>
+                            <option>Reforma o remodelación</option>
+                            <option>Mantenimiento eléctrico</option>
+                            <option>Plomería / Sanitarios</option>
+                            <option>Mantenimiento integral</option>
+                            <option>Otro servicio</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm mb-1">Descripción breve del trabajo</label>
+                        <textarea rows="4" class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:border-accent text-white" placeholder="Cuéntanos qué necesitas..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-accent hover:bg-amber-600 font-semibold py-3 px-6 rounded-lg transition-colors">
+                        Enviar Solicitud
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-primary text-gray-300 py-6 text-center">
+        <div class="container mx-auto px-4">
+            <p>© 2026 <strong>M.B.N SERVICIOS DE CONSTRUCCIÓN Y MANTENIMIENTO EN GENERAL</strong> — Pocito, San Juan, Argentina</p>
+            <p class="text-sm mt-2">Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
